@@ -3,7 +3,7 @@ A combo with completed CodeWars and HackerRank challenges and unit tests.
 
 ## Purpose
 
-### I will be fun to track performance progess and change in syntax and readability.
+### It will be fun to track performance / progess and change in syntax and readability.
 
 ## Run it
 
