@@ -1,4 +1,6 @@
+let borReach = require('./yoder.js')
 const tester = "()(())()";
+borReach.bummed();
 function validParens(parens){
     // if you get count of current ) and ( you can evalue if true or not.
     let openCount = 0;
@@ -18,6 +20,7 @@ function validParens(parens){
         // console.log("true");
         return true
     }
+
 
     // if (final.length === (openCount + closedCount)){
     //     console.log("true");

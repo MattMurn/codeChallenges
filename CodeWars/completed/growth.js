@@ -11,7 +11,7 @@ function nbYear(p0, percent, aug, p) {
         numYear ++;
     }
     // // console.log(currentYear);
-    // console.log(numYear);
+    console.log(numYear);
 
 
 return numYear;
@@ -19,6 +19,6 @@ return numYear;
 }
 
 
-// nbYear(10, 10, 100, 2000);
+ nbYear(10, 10, 100, 2000);
 
 nbYear(1500, 5, 100, 5000);
