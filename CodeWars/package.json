@@ -6,6 +6,8 @@
   "scripts": {
     "test": "jest",
     "watch": "jest --watch *.js"
+  },
+  "dependencies": {
+    "jest": "^22.4.3"
   }
 }
-
