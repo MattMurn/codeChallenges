@@ -1,16 +1,52 @@
 // const filter_list = require('./listFilter') 
-// const friend = require('./friendFoe');
+//  const friend = require('./completed/friendFoe');
 // const validParens = require('./validParens')
-const recreationOne = require('./recreationOne');
+// const recreationOne = require('./recreationOne');
 
-const list = [1,'a','b',0,15];
-const test2 = [1,2,'aasf','1','123',123]
-const friendInput = ["Ryan", "Kieran", "Jason", "Yous"];
-const tester = "()(()))()";
+// const list = [1,'a','b',0,15];
+// const test2 = [1,2,'aasf','1','123',123]
+//  const friendInput = ["Ryan", "Kieran", "Jason", "Yous"];
+// const tester = "()(()))()";
+// const pigIt = require('./pigIt');
+// const add = require('./chainAdd');
+// const dfSq = require('./dfSq')
+// const listSquared = require('./recreationOne');
 
-it("should return 4", () => {
-    expect(recreationOne(2, 2)).toEqual(4);
+const bump = require('./bumps');
+
+it("returns Wohoo if you complete the trip", () => {
+    expect(bump("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")).toEqual("Car Dead");
 })
+
+
+
+
+
+
+
+
+
+// it("given two positive ints, find all integers b/t whose sum of sq divisors are sqs", () => {
+//     expect(listSquared(1, 250)).toEqual([ [ 1, 1 ], [ 42, 2500 ], [ 246, 84100 ] ])
+// })
+// it("difference b/t the sum of sqs and the sq of their sum", () => {
+//     expect(dfSq(10)).toEqual(2640);
+// })
+
+// it("chains the add function to return total", () => {
+//     expect(add(2)(3)(4)).toEqual(9);
+// })
+
+// pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+
+// it("should return igPay atinlay siay oolcay", () => {
+//     expect(pigIt("Pig latin is cool"))
+//     .toEqual("igPay atinlay siay oolcay");
+    
+// })
+// it("should return 4", () => {
+//     expect(recreationOne(2, 2)).toEqual(4);
+// })
 
 // it("should return false" , ()=> {
 

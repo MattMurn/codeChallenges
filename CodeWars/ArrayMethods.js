@@ -102,23 +102,39 @@ var friends = [{
   // allbooks - list which will contain all friends' books +  
   // additional list contained in initialValue
   var allbooks = friends.reduce(function(accumulator, currentValue) {
-    return [accumulator, currentValue.name];
-  }, "Omar");
+    return [accumulator, currentValue.books];
+  }, "Jerry");
   
   // allbooks = [
   //   'Alphabet', 'Bible', 'Harry Potter', 'War and peace', 
   //   'Romeo and Juliet', 'The Lord of the Rings',
   //   'The Shining'
   // ]
-//   console.log(allbooks)
+
+  console.log(allbooks)
 
 
 joinSplit = example => {
-    let join = example.join();
-    let split = example.split();
+    // let join = example.join();
+    // let split = example.split();
     console.log(join);
     console.log(split);
      
 }
 
-joinSplit(forExample);
+// joinSplit(forExample);
+
+
+/* spread operator for es6
+    when you want to pass an array as a function argument.
+*/
+
+sum = numz => {
+    numz.reduce((el, to) => {
+        return el + to
+    }, 0)
+}
+
+const numbers = [2,3,45];
+console.log(sum(...numbers))
+console.log(sum(...numbers))

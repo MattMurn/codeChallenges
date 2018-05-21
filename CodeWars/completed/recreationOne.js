@@ -5,8 +5,9 @@
  (in C an array of Pair) or a string, each subarray having two elements, first the number whose 
  squared divisors is a square and then the sum of the squared divisors.
 */
-
+/// this works, codewars says its too slow as it tests over 15 times.
 function listSquared(m, n) {
+<<<<<<< HEAD:CodeWars/recreationOne.js
     let holder = [];
     let divisors = [];
     let final = [];
@@ -37,7 +38,34 @@ function listSquared(m, n) {
 
 listSquared(1, 250);
 
+=======
+    
+    
+    const final = [];
+    onceThrough = counter => { 
+        
+        const holder = [];         
+        for( let i = 1; i <= counter; i++){
+            if(Number.isInteger(counter/i)){
+                holder.push(i*i);
+            }        
+        }
+        const reducer = holder.reduce((first, second) => {
+            return first + second;
+        },0);
+        let sqr = Math.sqrt(reducer);
+        if(Number.isInteger(sqr)){
+             final.push([counter, reducer]);
+             
+        }
+    }
+    for(let x = m; x<= n; x++){
+        onceThrough(x);
+    }
+    return final;
+}
 
-// listSquared(2, 5);
+>>>>>>> cc4245cfed86d25732f0310c4328ce35d688a44b:CodeWars/completed/recreationOne.js
+
 
 module.exports = listSquared;
