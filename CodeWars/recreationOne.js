@@ -10,36 +10,32 @@ function listSquared(m, n) {
     let holder = [];
     let divisors = [];
     let final = [];
-    let counter = m;
-    while(counter < n) {
-        for( let i = 1; i <= counter; i++){
-            if(Number.isInteger(counter/i)){
-                holder.push(i);
+    // let counter = m;
+    for(let m; m < n; m++){    
+        for( let i = 1; i <= m; i++){
+            if(Number.isInteger(m/i)){
+                holder.push(i*i);
             }        
         }
-        counter ++;
+
+        let reducer = holder.reduce((first, second) => {
+        return first + second;
+        },0);
+
+        let sqr = Math.sqrt(reducer);
+        // let sqLen = sqr.toString().split("").length;
+        
+        if(Number.isInteger(sqr)){
+            console.log([k,sqr])
+        }
+        // console.log(reducer);
+        final.push( reducer);
+        console.log(final);
+        // console.log(sqLen);
     }
-    for(let x = m; x<= n; x++){
-        console.log(x);
-    }
-
-    console.log(holder)
-    let reducer = holder.reduce((first, second) => {
-       return first + second;
-    },0);
-
-    let sqr = Math.sqrt(reducer);
-    let sqLen = sqr.toString().split("").length;
-    
-
-
-    console.log(reducer);
-    
-    // console.log(sqr);
-
 }
 
-listSquared(42, 2500);
+listSquared(1, 250);
 
 
 // listSquared(2, 5);
