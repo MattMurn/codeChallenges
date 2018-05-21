@@ -12,6 +12,11 @@
 // const dfSq = require('./dfSq')
 // const listSquared = require('./recreationOne');
 
+const bump = require('./bumps');
+
+it("returns Wohoo if you complete the trip", () => {
+    expect(bump("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")).toEqual("Car Dead");
+})
 
 
 
