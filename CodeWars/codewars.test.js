@@ -15,21 +15,17 @@
 // const getSum = require('./sums');
 const accum = require('./mumble');
 
-<<<<<<< HEAD
-// const bump = require('./bumps');
-=======
 it("returns each char * the element number.", () => {
 
-    expect(accum("s")).toEqual(true);
+    expect(accum("Ass")).toEqual("A-Ss-Sss");
 })
->>>>>>> a129eedecd75065d4fbdfc45c6fab8b677afd80f
 
-const stringer = require('./smith');
+// const stringer = require('./smith');
 
-it("every first letter to caps.", () => {
-    expect(stringer("How can mirrors be real if our eyes aren't real")).toEqual("How Can Mirrors Be Real If Our Eyes Aren't Real");
+// it("every first letter to caps.", () => {
+//     expect(stringer("How can mirrors be real if our eyes aren't real")).toEqual("How Can Mirrors Be Real If Our Eyes Aren't Real");
 
-})
+// })
 
 
 

@@ -1,12 +1,10 @@
 accum = s => {
-    
-   
-    const merged = s.split('').map(element => {
-        return element.toUpperCase() + (element * (s.indexOf(element))) 
+   let count = -1;
+    return s.split('').map(element => {
+        count ++;
+        return element.toUpperCase() + element.repeat(count) 
     }).join('-');
-    console.log(merged)
 }
 
 module.exports = accum;
 
-accum("sdfskdj");
