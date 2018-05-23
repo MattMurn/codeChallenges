@@ -7,38 +7,6 @@
 */
 /// this works, codewars says its too slow as it tests over 15 times.
 function listSquared(m, n) {
-<<<<<<< HEAD:CodeWars/recreationOne.js
-    let holder = [];
-    let divisors = [];
-    let final = [];
-    // let counter = m;
-    for(let m; m < n; m++){    
-        for( let i = 1; i <= m; i++){
-            if(Number.isInteger(m/i)){
-                holder.push(i*i);
-            }        
-        }
-
-        let reducer = holder.reduce((first, second) => {
-        return first + second;
-        },0);
-
-        let sqr = Math.sqrt(reducer);
-        // let sqLen = sqr.toString().split("").length;
-        
-        if(Number.isInteger(sqr)){
-            console.log([k,sqr])
-        }
-        // console.log(reducer);
-        final.push( reducer);
-        console.log(final);
-        // console.log(sqLen);
-    }
-}
-
-listSquared(1, 250);
-
-=======
     
     
     const final = [];
@@ -65,7 +33,6 @@ listSquared(1, 250);
     return final;
 }
 
->>>>>>> cc4245cfed86d25732f0310c4328ce35d688a44b:CodeWars/completed/recreationOne.js
 
 
 module.exports = listSquared;

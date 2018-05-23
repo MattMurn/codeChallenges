@@ -12,19 +12,22 @@
 // const dfSq = require('./dfSq')
 // const listSquared = require('./recreationOne');
 
-const bump = require('./bumps');
+// const bump = require('./bumps');
 
-it("returns Wohoo if you complete the trip", () => {
-    expect(bump("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")).toEqual("Car Dead");
+const stringer = require('./smith');
+
+it("every first letter to caps.", () => {
+    expect(stringer("How can mirrors be real if our eyes aren't real")).toEqual("How Can Mirrors Be Real If Our Eyes Aren't Real");
+
 })
 
 
 
 
 
-
-
-
+// it("returns Wohoo if you complete the trip", () => {
+//     expect(bump("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")).toEqual("Car Dead");
+// })
 
 // it("given two positive ints, find all integers b/t whose sum of sq divisors are sqs", () => {
 //     expect(listSquared(1, 250)).toEqual([ [ 1, 1 ], [ 42, 2500 ], [ 246, 84100 ] ])
