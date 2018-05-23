@@ -2,7 +2,6 @@
 //  const friend = require('./completed/friendFoe');
 // const validParens = require('./validParens')
 // const recreationOne = require('./recreationOne');
-
 // const list = [1,'a','b',0,15];
 // const test2 = [1,2,'aasf','1','123',123]
 //  const friendInput = ["Ryan", "Kieran", "Jason", "Yous"];
@@ -11,8 +10,19 @@
 // const add = require('./chainAdd');
 // const dfSq = require('./dfSq')
 // const listSquared = require('./recreationOne');
-
 // const bump = require('./bumps');
+// const aveng = require('./aveng');
+// const getSum = require('./sums');
+const accum = require('./mumble');
+
+<<<<<<< HEAD
+// const bump = require('./bumps');
+=======
+it("returns each char * the element number.", () => {
+
+    expect(accum("s")).toEqual(true);
+})
+>>>>>>> a129eedecd75065d4fbdfc45c6fab8b677afd80f
 
 const stringer = require('./smith');
 
@@ -24,6 +34,35 @@ it("every first letter to caps.", () => {
 
 
 
+
+// it("returns Wohoo if you complete the trip", () => {
+//     expect(bump("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")).toEqual("Car Dead");
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// it("returns the sum of the every int in the range", () => {
+
+//     expect(getSum(-161,-177)).toEqual(-2873);
+// })
+// const total = [25, 25, 50, 50, 1000]
+// it("Should return true", () => {
+
+//     expect(aveng(total)).toEqual("No");
+// })
 
 // it("returns Wohoo if you complete the trip", () => {
 //     expect(bump("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")).toEqual("Car Dead");
