@@ -12,28 +12,46 @@
 // const listSquared = require('./recreationOne');
 // const bump = require('./bumps');
 // const aveng = require('./aveng');
-const getSum = require('./sums');
+// const getSum = require('./sums');
+const accum = require('./mumble');
 
-it("returns the sum of the every int in the range", () => {
+it("returns each char * the element number.", () => {
 
-    expect(getSum(-161,-177)).toEqual(-2873);
+    expect(accum("s")).toEqual(true);
 })
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// it("returns the sum of the every int in the range", () => {
+
+//     expect(getSum(-161,-177)).toEqual(-2873);
+// })
 // const total = [25, 25, 50, 50, 1000]
 // it("Should return true", () => {
 
 //     expect(aveng(total)).toEqual("No");
 // })
-
-
-
-
-
-
-
 
 // it("returns Wohoo if you complete the trip", () => {
 //     expect(bump("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")).toEqual("Car Dead");
