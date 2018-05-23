@@ -1,8 +1,6 @@
 accum = s => {
-   let count = -1;
-    return s.split('').map(element => {
-        count ++;
-        return element.toUpperCase() + element.repeat(count) 
+    return s.split('').map((element, i) => {
+        return element.toUpperCase() + element.toLowerCase().repeat(i) 
     }).join('-');
 }
 

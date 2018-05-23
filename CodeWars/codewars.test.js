@@ -17,7 +17,7 @@ const accum = require('./mumble');
 
 it("returns each char * the element number.", () => {
 
-    expect(accum("Ass")).toEqual("A-Ss-Sss");
+    expect(accum("ASS")).toEqual("A-Ss-Sss");
 })
 
 // const stringer = require('./smith');
