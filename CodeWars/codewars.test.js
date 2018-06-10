@@ -13,12 +13,35 @@
 // const bump = require('./bumps');
 // const aveng = require('./aveng');
 // const getSum = require('./sums');
-const accum = require('./mumble');
+// const accum = require('./mumble');
+// const encrypt = require('./encrypt');
+const nato = require('./NATO');
 
-it("returns each char * the element number.", () => {
 
-    expect(accum("Ass")).toEqual("A-Ss-Sss");
+it("returns true", () => {
+    expect(nato("If you can read")).toEqual("India Foxtrot Yankee Oscar Uniform Charlie Alfa November Romeo Echo Alfa Delta");
 })
+
+
+
+
+
+// it("returns true", () => {
+//     expect(encrypt.encrypt("text", "n")).toEqual(true);
+    
+// })
+
+// it("return true", () => {
+    
+//     expect(encrypt.decrypt("text", "n")).toEqual(true);
+// })
+
+
+
+// it("returns each char * the element number.", () => {
+
+//     expect(accum("Ass")).toEqual("A-Ss-Sss");
+// })
 
 // const stringer = require('./smith');
 

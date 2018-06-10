@@ -11,8 +11,6 @@ current = {
 
 catchEye = hiringManager => {
     if(hiringManager) {
-        Caug
-        ht = true;
         return true;
     } 
     else {
