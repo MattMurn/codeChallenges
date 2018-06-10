@@ -18,8 +18,12 @@
 const nato = require('./NATO');
 
 
+<<<<<<< HEAD
 it("returns true", () => {
     expect(nato("If you can read")).toEqual("India Foxtrot Yankee Oscar Uniform Charlie Alfa November Romeo Echo Alfa Delta");
+=======
+    expect(accum("ASS")).toEqual("A-Ss-Sss");
+>>>>>>> f342f171e9aead78a37dbb5b959e6bbaee69d079
 })
 
 
