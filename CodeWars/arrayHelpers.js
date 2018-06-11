@@ -8,3 +8,8 @@
 // sum() must return the sum of all array values
 // even() must return an array of all even numbers
 // odd() must return an array of all odd numbers
+
+/*
+psuedo / ideas => 
+    try adding prototype methods to either the locally defined array object. This should work 1 time for that specific array, 
+    but to scale and re use, add protoype methods to the global Array object for easier reuseablility. (similiar to forEach,filter, etc.)
