@@ -15,11 +15,14 @@
 // const getSum = require('./sums');
 // const accum = require('./mumble');
 // const encrypt = require('./encrypt');
-const arrayHelpers = require('./arrayHelpers');
-
+// const arrayHelpers = require('./arrayHelpers');
+const stocklist = require('./bookCompare');
+b = ["ABAR 0", "CDXE 0", "BKWR 0", "BTSQ 0", "DRTY 0"]
+c = ["R", "X", "S", "K"]
+res = "(A : 200) - (B : 1140)"
 it("Returns true", () => {
-
-})
+    expect(stocklist(b, c)).toEqual('');
+});
 
 
 
