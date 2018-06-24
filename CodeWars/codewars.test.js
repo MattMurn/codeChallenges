@@ -16,16 +16,24 @@
 // const accum = require('./mumble');
 // const encrypt = require('./encrypt');
 // const arrayHelpers = require('./arrayHelpers');
-const stocklist = require('./bookCompare');
-b = ["ABAR 0", "CDXE 0", "BKWR 0", "BTSQ 0", "DRTY 0"]
-c = ["R", "X", "S", "K"]
-res = "(A : 200) - (B : 1140)"
-it("Returns true", () => {
-    expect(stocklist(b, c)).toEqual('');
-});
+// const stocklist = require('./bookCompare');
+// const predictAge = require('./age');
+const multiplicationTable = require('./multTable');
 
+it("returns true", () => {
+    expect(multiplicationTable(3, 3)).toEqual([[1,2,3],[2,4,6],[3,6,9]]);
+})
 
+// it("returns 86", ()=> {
+//     expect(predictAge(65,60,75,55,60,63,64,45)).toEqual(86);
+// })
 
+// b = ["ABAR 0", "CDXE 0", "BKWR 0", "BTSQ 0", "DRTY 0"]
+// c = ["R", "X", "S", "K"]
+// res = "(A : 200) - (B : 1140)"
+// it("Returns true", () => {
+//     expect(stocklist(b, c)).toEqual('');
+// });
 
 // it("returns true", () => {
 //     expect(encrypt.encrypt("text", "n")).toEqual(true);
