@@ -18,11 +18,16 @@
 // const arrayHelpers = require('./arrayHelpers');
 // const stocklist = require('./bookCompare');
 // const predictAge = require('./age');
-const multiplicationTable = require('./multTable');
+// const multiplicationTable = require('./multTable');
+const stat = require('./stat');
 
-it("returns true", () => {
-    expect(multiplicationTable(3, 3)).toEqual([[1,2,3],[2,4,6],[3,6,9]]);
+it('returns true', () => {
+    expect(stat("stg")).toBe(true);
 })
+
+// it("returns true", () => {
+//     expect(multiplicationTable(3, 3)).toEqual([[1,2,3],[2,4,6],[3,6,9]]);
+// })
 
 // it("returns 86", ()=> {
 //     expect(predictAge(65,60,75,55,60,63,64,45)).toEqual(86);
