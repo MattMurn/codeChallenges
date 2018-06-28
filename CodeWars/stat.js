@@ -31,8 +31,10 @@ getTime = string => {
     if(number <60) {
         return number
     }
+    number.replace('|', 'R')
     
 }
+getTime('time|')
 getTime(1100);
 getTime('1100');
 getTime(true);
