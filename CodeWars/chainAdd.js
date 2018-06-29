@@ -1,6 +1,3 @@
-
-
-
     add = x => {
         let total = 0;
         let f = y => {

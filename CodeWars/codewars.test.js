@@ -1,10 +1,10 @@
 // const filter_list = require('./listFilter') 
-//  const friend = require('./completed/friendFoe');
+// const friend = require('./completed/friendFoe');
 // const validParens = require('./validParens')
 // const recreationOne = require('./recreationOne');
 // const list = [1,'a','b',0,15];
 // const test2 = [1,2,'aasf','1','123',123]
-//  const friendInput = ["Ryan", "Kieran", "Jason", "Yous"];
+// const friendInput = ["Ryan", "Kieran", "Jason", "Yous"];
 // const tester = "()(()))()";
 // const pigIt = require('./pigIt');
 // const add = require('./chainAdd');
@@ -19,11 +19,19 @@
 // const stocklist = require('./bookCompare');
 // const predictAge = require('./age');
 // const multiplicationTable = require('./multTable');
-const stat = require('./stat');
+// const stat = require('./stat');
+// const century = require('./century');
+const fruit = require('./fruitMachine');
 
 it('returns true', () => {
-    expect(stat("stg")).toBe(true);
+    expect(fruit('return ', 'true')).toBe(true);
 })
+// it('returns true ', ()=>{
+//     expect(century(1701)).toBe(18);
+// })
+// it('returns true', () => {
+//     expect(stat("stg")).toBe(true);
+// })
 
 // it("returns true", () => {
 //     expect(multiplicationTable(3, 3)).toEqual([[1,2,3],[2,4,6],[3,6,9]]);
