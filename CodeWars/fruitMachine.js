@@ -20,7 +20,7 @@ fruit = (reels, spins) => {
     // console.log(one, two, three)
     score(one, two, three, compare);
     // console.log(spins.includes(1,1))
-    // loop through spin 
+    // loop through spin and return scores.
 }
 score = (one, two, three, compare) => {
     // three the same, 
