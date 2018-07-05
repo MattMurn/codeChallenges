@@ -1,5 +1,3 @@
-
-
 fruit = (reels, spins) => {
     let scoring = {
         Wild: 10,
@@ -17,42 +15,53 @@ fruit = (reels, spins) => {
     let two = reels[1][spins[1]]
     let three = reels[2][spins[2]]
     let compare = [one, two, three]
-    // console.log(one, two, three)
-    score(one, two, three, compare);
-    // console.log(spins.includes(1,1))
-    // loop through spin and return scores.
-}
-score = (one, two, three, compare) => {
-    // three the same, 
-    switch(true){
-        case one == two && two == three:
-            console.log("three of a kind");
-            break;
-        case compare.includes('Wild') && one == two || two == three || one == three:
-            console.log('Two plus wild')
-            break;
-        case one == two || two == three || one == three:
-            console.log("two of a kind");
-            break;
-        
-        default:
-            console.log("0")
+    let count = {};
+    let counter = 0;
+    compare.forEach( x => {
+        count[x] = (count[x] || 0) +1;
+//         if(count[x] > 1){
+//             counter ++;
+//         }
+    });
+    for(prop in count){
+        if (count[prop] == 3){
+            return scoring[prop] * 10;
+        }else if(count[prop] === 'Wild' && count['Wild'] == 2){
+            console.log("Two wilds and a third")
+            console.log(scoring['Wild'])
+            return scoring['Wild'];
+        }else if(count[prop] == 2 && count[prop] !== 'Wild' && compare.includes('Wild') ){
+            console.log("Two of a kind and a Wild")
+            console.log(scoring[prop]*2)
+            return scoring[prop] * 2;
+        }else if(count[prop] == 2){
+            console.log("Two of a kind")
+            console.log(scoring[prop])
+            return scoring[prop]
+        }
+        else if(counter === 3){
+            console.log("None the same")
+            return 0
+        }else {
+          counter ++;
+        }
     }
-    // two the same,
-    // two the same and third === wild.
 }
-spin = [0, 0, 0];
-spin2 = [1,1,5];
+
+
+
+spin = [0, 0, 1];
+spin2 = [1,1,6];
 spin3 = [1,0,1];
-spin4 = [5,1,1];
+spin4 = [1,1,1];
 spin5 = [1,6,0];
 reel1 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"];
 reel2 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"];
 reel3 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"];
 
 
-fruit([reel1, reel1, reel1], spin2);
-fruit([reel1, reel1, reel1], spin3);
-fruit([reel1, reel1, reel1], spin4);
-fruit([reel1, reel1, reel1], spin5);
+fruit([reel1, reel2, reel3], spin);
+// fruit([reel1, reel1, reel1], spin2);
+// fruit([reel1, reel1, reel1], spin4);
+// fruit([reel1, reel1, reel1], spin5);
 module.exports = fruit;

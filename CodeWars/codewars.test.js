@@ -22,9 +22,12 @@
 // const stat = require('./stat');
 // const century = require('./century');
 const fruit = require('./fruitMachine');
-
-it('returns true', () => {
-    expect(fruit('return ', 'true')).toBe(true);
+reel1 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"];
+reel2 = ["Bar", "Wild", "Queen", "Bell", "King", "Seven", "Cherry", "Jack", "Star", "Shell"];
+reel3 = ["Bell", "King", "Wild", "Bar", "Seven", "Jack", "Shell", "Cherry", "Queen", "Star"];
+spin = [5,4,3];
+it('returns score from the fruit machine Game', () => {
+    expect(fruit([reel1,reel2,reel3],spin)).toBe(`Should Return: 40`);
 })
 // it('returns true ', ()=>{
 //     expect(century(1701)).toBe(18);
