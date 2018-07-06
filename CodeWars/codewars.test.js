@@ -1,10 +1,10 @@
 // const filter_list = require('./listFilter') 
-//  const friend = require('./completed/friendFoe');
+// const friend = require('./completed/friendFoe');
 // const validParens = require('./validParens')
 // const recreationOne = require('./recreationOne');
 // const list = [1,'a','b',0,15];
 // const test2 = [1,2,'aasf','1','123',123]
-//  const friendInput = ["Ryan", "Kieran", "Jason", "Yous"];
+// const friendInput = ["Ryan", "Kieran", "Jason", "Yous"];
 // const tester = "()(()))()";
 // const pigIt = require('./pigIt');
 // const add = require('./chainAdd');
@@ -19,11 +19,22 @@
 // const stocklist = require('./bookCompare');
 // const predictAge = require('./age');
 // const multiplicationTable = require('./multTable');
-const stat = require('./stat');
-
-it('returns true', () => {
-    expect(stat("stg")).toBe(true);
+// const stat = require('./stat');
+// const century = require('./century');
+const fruit = require('./fruitMachine');
+reel1 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"];
+reel2 = ["Bar", "Wild", "Queen", "Bell", "King", "Seven", "Cherry", "Jack", "Star", "Shell"];
+reel3 = ["Bell", "King", "Wild", "Bar", "Seven", "Jack", "Shell", "Cherry", "Queen", "Star"];
+spin = [5,4,3];
+it('returns score from the fruit machine Game', () => {
+    expect(fruit([reel1,reel2,reel3],spin)).toBe(`Should Return: 40`);
 })
+// it('returns true ', ()=>{
+//     expect(century(1701)).toBe(18);
+// })
+// it('returns true', () => {
+//     expect(stat("stg")).toBe(true);
+// })
 
 // it("returns true", () => {
 //     expect(multiplicationTable(3, 3)).toEqual([[1,2,3],[2,4,6],[3,6,9]]);
