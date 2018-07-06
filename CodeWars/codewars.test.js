@@ -65,25 +65,9 @@ it('returns true', () => {
 // })
 
 
-
-
-
 // it("returns Wohoo if you complete the trip", () => {
 //     expect(bump("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn")).toEqual("Car Dead");
 // })
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
