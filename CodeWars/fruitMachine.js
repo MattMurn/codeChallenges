@@ -24,9 +24,10 @@ fruit = (reels, spins) => {
 //         }
     });
     for(prop in count){
+        counter ++;
         if (count[prop] == 3){
             return scoring[prop] * 10;
-        }else if(count[prop] === 'Wild' && count['Wild'] == 2){
+        }else if(count['Wild'] == 2 || count[prop] == 2){
             console.log("Two wilds and a third")
             console.log(scoring['Wild'])
             return scoring['Wild'];
@@ -42,15 +43,13 @@ fruit = (reels, spins) => {
         else if(counter === 3){
             console.log("None the same")
             return 0
-        }else {
-          counter ++;
         }
     }
 }
 
 
 
-spin = [0, 0, 1];
+spin = [0, 2, 2];
 spin2 = [1,1,6];
 spin3 = [1,0,1];
 spin4 = [1,1,1];
