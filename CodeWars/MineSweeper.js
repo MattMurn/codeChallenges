@@ -35,8 +35,14 @@ class Board {
     // takes in an index and returns an updated value
       for(let i =0; i <= this.board.length-1; i++){
           for(let n=0; n <= this.cols; n++){
+              let prev = n-1;
+              let next = n + 1;
+              let topLeft = (i -1 >= 0) ? this.board[i-1][n-1] : null;
+              let top = (i -1 >= 0) ? this.board[i-1][n] : null;
+              let topRight = (i -1 >= 0) ? this.board[i-1][n+1] : null;
               (this.board[i][n] === '****') ? null : 
-              this.board[i][n] = "Test";
+              this.board[i][n] = n;
+              console.log(`previous: ${top}`)
           }
       }  
     }
