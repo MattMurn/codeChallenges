@@ -1,0 +1,16 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch *.js"
+  },
+  "dependencies": {
+    "jest": "^22.4.3"
+  },
+  "devDependencies": {
+    "jest": "^22.4.4"
+  }
+}
