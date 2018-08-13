@@ -4,7 +4,7 @@ function removeRotten(bagOfFruits){
       return console.log(fruit.replace("rotten", "").toLowerCase());
     });
   }
-  // removeRotten(["rottenBanana", "apple", "kiwi", "qaii"])
+  removeRotten(["rottenBanana", "apple", "kiwi", "qaii"])
   // removeRotten([])
 
 
