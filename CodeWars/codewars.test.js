@@ -23,6 +23,15 @@
 // const century = require('./century');
 // const fruit = require('./fruitMachine');
 // const sort = require('./sortStrings');
+const group = require('./organize');
+
+it('returns true', () => {
+    expect(group()).toBe(true);
+})
+
+
+
+
 // reel1 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"];
 // reel2 = ["Bar", "Wild", "Queen", "Bell", "King", "Seven", "Cherry", "Jack", "Star", "Shell"];
 // reel3 = ["Bell", "King", "Wild", "Bar", "Seven", "Jack", "Shell", "Cherry", "Queen", "Star"];
