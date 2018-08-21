@@ -32,7 +32,7 @@ const reverse = (str) => {
     
 }
 reverse('hello')
-
+//look into string alteration
 function reverseString(str) {
     if (str === "")
       return "";
