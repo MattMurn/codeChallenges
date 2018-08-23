@@ -28,9 +28,6 @@ gap = (g, m, n) => {
             console.log([holder[i], holder[i+1]])
              return [holder[i], holder[i+1]]
         }
-        // for(let j = i+1; j <= holder.length; j++){
-            
-        // }
     }
     console.log(null)
     return null

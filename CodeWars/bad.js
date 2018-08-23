@@ -34,8 +34,6 @@ Factory.prototype.hello = hello => {
 // Matt.hello("Goodbye")
 // Matt.hello(`Hello again this is ${Matt.name}`)
 
-
-
 trailer = x => {
   console.log('x parameter hit')
   return y => {
